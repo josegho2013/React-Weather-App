@@ -1,0 +1,16 @@
+.App {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+body{
+
+  background-image: url("https://services.meteored.com/img/article/el-misterioso-rayo-verde-del-atardecer-218011-3_1280.jpg");
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  background-repeat: no-repeat;
+   }
