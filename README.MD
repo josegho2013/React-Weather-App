@@ -5,11 +5,8 @@
 <br/>
 <p> Aplicación realizada en react, la cual consiste en introducir el numbre de la ciudad que se desea consultar para la obtención del clima, esta aplicación se desarrollo como parte del ciclo de formación, en la misma se consumió una api externa para extraer los datos en tiempo real del clima de cada ciudad consultada.</p>
 
-<img height="100px" src="Client/src/image/sandia.png" align="right"/>
+<img height="100px" src="Client/src/image/sandia.png" />
 
-<br/>
-<br/>
-
-<p align="center" style="margin-top: 25%;">
+<p style="margin-top: 25%;">
   <img width="85%" src="Client/src/image/picture.jpeg"/>
 </p>
