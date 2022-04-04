@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@200&display=swap");
+
+.card {
+  margin: 20px;
+  text-align: center;
+  margin-left: 30px;
+  margin-top: 20px;
+  color: rgb(255, 255, 255);
+  width: 300px;
+  height: 350px;
+  border-radius: 6px;  
+  background: linear-gradient(rgb(18 154 191 / 80%) 33%, rgb(255 118 0 / 90%) 70%);
+  position: relative;
+  font-family: "Saira Semi Condensed", sans-serif;
+  font-weight: 600;
+}
+
+.card-title {
+  margin-bottom: 15px;
+}
+
+#closeIcon {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 8px;
+  margin-top: 8px;
+}
+#closeIcon button {
+  background-color: #ff6500;
+  color: white;
+  border: none;
+  padding: 2%;;
+  border: white 0.1rem solid;
+  cursor: pointer;
+}
+
+.card-body {
+  width: -webkit-fill-available;
+  height: 60%;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+.image {
+  width: 50%;
+}
+.image img {
+  margin-top: -13%;
+}
+
+.title {
+  justify-content: center;
+  width: 50%;
+}
+.title p {
+  font-size: xxx-large;
+  margin: 0rem;
+}
+.data {
+  display: flex;
+  justify-content: space-around;
+}
+.cold {
+  background-image: url("../image/cold.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 3rem;
+  height: 3rem;
+}
+.hot {
+  background-image: url("../image/hot.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 3rem;
+  height: 3rem;
+}
+.humidity {
+  background-image: url("../image/humidity.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 3rem;
+  height: 3rem;
+}
+.wind {
+  background-image: url("../image/wind.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 3rem;
+  height: 3rem;
+}
+.weather {
+  margin: 0;
+  text-align: inherit;
+  margin-top: -2rem;
+  padding: 0 15px;
+}
