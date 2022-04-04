@@ -10,7 +10,6 @@ function App() {
     //Acá habría que hacer el llamado a la API para obtener los datos de la ciudad
     //pero de momento agregaremos una ciudad por default para ver que funcione
     let apiKey = "4ae2636d8dfbdc3044bede63951a019b";
-    console.log("AREPA", ciudad);
 
     fetch(
       `http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric`
@@ -24,15 +23,23 @@ function App() {
             max: Math.round(recurso.main.temp_max),
             img: recurso.weather[0].icon,
             id: recurso.id,
-            wind: recurso.wind.speed,
+            wind: Math.ceil(recurso.wind.speed * 3.6),
+            humidity: recurso.main.humidity,
             temp: recurso.main.temp,
             name: recurso.name,
             weather: recurso.weather[0].main,
             clouds: recurso.clouds.all,
             latitud: recurso.coord.lat,
             longitud: recurso.coord.lon,
+            description: recurso.weather[0].description
           };
-          setCities((oldCities) => [...oldCities, ciudad]);
+
+          const cityFounded = cities.find(city => city.id === ciudad.id)
+          if(!cityFounded){
+            setCities(oldCities => [...oldCities, ciudad]);
+          } else {
+            alert("Ya tenés esa ciudad")
+          }
         } else {
           alert("Ciudad no encontrada");
         }
