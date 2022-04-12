@@ -10,7 +10,7 @@
 
 <img height="100px" src="src/image/sandia.png" />
 
-<p>Sitio deployado en <a>https://the-weather-api-react.netlify.app/</a></p>
+<p>Sitio deployado en "[https://the-weather-api-react.netlify.app/]"</p>
 
 <p style="margin-top: 10%;">
   <img width="85%" src="src/image/weather_app.png"/>
